@@ -1,7 +1,21 @@
 # Demo 🚙🚙🚙
 URL: https://stdioh321-nestjs-crud.herokuapp.com/users
 
+## Postman
+
+Use the following [Postman](https://www.postman.com/downloads/) json file to interact with the **CRUD**:
+
+> https://github.com/stdioh321/nestjs-crud/blob/main/nest-crud.postman_collection.json
+
+
+<br>
+<br>
+
+# References
+* [Tutorial](https://www.youtube.com/watch?v=cBIUOL6MFXw)
+
 ----
+
 <p align="center">
   <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo-small.svg" width="200" alt="Nest Logo" /></a>
 </p>

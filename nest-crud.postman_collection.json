@@ -140,7 +140,7 @@
 	"variable": [
 		{
 			"key": "_base_url",
-			"value": "http://localhost:3333"
+			"value": "https://stdioh321-nestjs-crud.herokuapp.com"
 		}
 	]
 }
