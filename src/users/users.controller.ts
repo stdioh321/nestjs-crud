@@ -7,8 +7,11 @@ import {
   Param,
   Delete,
   Inject,
+  BadRequestException,
+  HttpException,
+  HttpStatus,
+  InternalServerErrorException,
 } from '@nestjs/common';
-import { Query } from 'mongoose';
 import { UsersService } from './users.service';
 import { CreateUserDto } from './dto/create-user.dto';
 import { UpdateUserDto } from './dto/update-user.dto';
@@ -21,8 +24,13 @@ export class UsersController {
     private readonly usersService: UsersService) {}
 
   @Post()
-  create(@Body() createUserDto: CreateUserDto) {
-    return this.usersService.create(createUserDto);
+  async create(@Body() createUserDto: CreateUserDto) {
+    try {
+      return await this.usersService.create(createUserDto);
+    } catch (error) {
+      if(error?.constructor?.name == 'QueryFailedError') throw new BadRequestException(error)
+      throw new InternalServerErrorException(error);
+    }
   }
 
   @Get()
