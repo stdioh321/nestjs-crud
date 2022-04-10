@@ -1,3 +1,5 @@
+# Testing TypeORM + Sqlite
+
 # Demo 🚙🚙🚙
 URL: https://stdioh321-nestjs-crud.herokuapp.com/users
 
@@ -5,7 +7,7 @@ URL: https://stdioh321-nestjs-crud.herokuapp.com/users
 
 Use the following [Postman](https://www.postman.com/downloads/) json file to interact with the **CRUD**:
 
-> https://github.com/stdioh321/nestjs-crud/blob/main/nest-crud.postman_collection.json
+> https://github.com/stdioh321/nestjs-crud/blob/typeorm-sqlite/nest-crud.postman_collection.json
 
 
 <br>
