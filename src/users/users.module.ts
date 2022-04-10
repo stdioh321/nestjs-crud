@@ -3,8 +3,7 @@ import { UsersService } from './users.service';
 import { UsersController } from './users.controller';
 import { User } from './entities/user.entity';
 import { userProviders } from './entities/user.provider';
-import { DatabaseModule } from 'src/db/database.module';
-
+import { DatabaseModule } from './../db/database.module';
 @Module({
   imports: [
     DatabaseModule
