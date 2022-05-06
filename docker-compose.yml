@@ -1,0 +1,7 @@
+version: '3.3'
+services:
+  back:
+    build: .
+    container_name: back
+    ports:
+      - "3333:3333"
